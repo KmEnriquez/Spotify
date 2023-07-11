@@ -5,5 +5,29 @@
 @tailwind utilities;
 
 .container {
-    @apply sm:mx-auto max-w-[70rem] w-full;
+    @apply mx-auto max-w-[70rem] w-full;
+}
+
+
+
+@layer components {
+    .header__nav.open {
+        @apply right-0;
+    }
+
+    .footer__text a {
+        @apply hover:text-[#1ed760];
+    }
+}
+
+.toggle__menu.open span:first-child {
+    transform: rotate(45deg) translate(3px, 2px);
+}
+
+.toggle__menu.open span:nth-child(2) {
+    display: none;
+}
+
+.toggle__menu.open span:last-child {
+    transform: rotate(-45deg) translate(3px, -2px);
 }

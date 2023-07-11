@@ -11,32 +11,42 @@
 <body class="font-body">
     <header class="header bg-black">
         <div class="container">
-            <div class="header__wrapper flex gap-10">
+            <div class="header__wrapper justify-between mx-4 flex py-4">
                 <div class="branding">
-                    <a href="#" class="text-white"><img src="../image/logo.svg" alt=""></a>
+                    <a href="#" class="text-white flex items-center gap-1">
+                        <i class="fa-brands fa-spotify text-[1.5rem]"></i>
+                        <h1>Spotify</h1>
+                    </a>
                 </div>
-                <div class="header__nav">
-                    <ul class="flex sm:flex gap-4 sm:flex-col">
-                        <li>
-                            <li><a href="#" class="text-white">Premium</a></li>
-                            <li><a href="#" class="text-white">Support</a></li>
-                            <li><a href="#" class="text-white">Download</a></li>
-                        </li>
+                <div class="header__nav w-[26rem] absolute right-[-100vh] h-[100vh] top-0 bg-black duration-700 ease-in-out">
+                    <ul class="flex flex-col gap-4 mt-8 ml-8">
+                        <li><a href="#" class="text-white text-[2rem] font-semibold">Premium</a></li>
+                        <li><a href="#" class="text-white text-[2rem] font-semibold">Support</a></li>
+                        <li><a href="#" class="text-white text-[2rem]  font-semibold">Download</a></li>
+                        <li><a href="#" class="text-white font-semibold">—</a></li>
+                        <li><a href="#" class="text-white text-[1.5rem]">Sign up</a></li>
+                        <li><a href="#" class="text-white text-[1.5rem]">Log in</a></li>
                     </ul>
                 </div>
+                <div class="toggle__menu items-center flex flex-col gap-1 bg-transparent">
+                    <span class="bg-white h-[3px] w-[20px] duration-700 ease-in-out"></span>
+                    <span class="bg-white h-[3px] w-[20px] duration-100 ease-in-out"></span>
+                    <span class="bg-white h-[3px] w-[20px] duration-700 ease-in-out"></span>
+                </div>
+                
             </div>
         </div>
     </header>
 
     <section class="hero bg-[#C5F0C9]">
         <div class="container">
-            <div class="hero__wrapper gap-4 sm:flex">
+            <div class="hero__wrapper gap-4 mx-4 lg:flex">
                 <div class="hero__text">
                     <h1 class="text-[1.7rem] font-bold text-[#283EA3] pt-[4rem]">Get Premium free for 2 months</h1>
                     <h2 class="text-[#283EA3] text-[1.2rem] py-[.5rem]">Only $9.99/month after. Cancel anytime.</h2>
-                    <div class="hero__button flex flex-col space-y-2 py-4 ">
-                    <a href="#" class="rounded-full bg-[#283EA3] py-3 text-[#C5F0C9] text-center font-semibold">GET STARTED</a>
-                    <a href="#" class="rounded-full border-solid border-2 py-3 border-[#283EA3] text-center">VIEW PLANS</a>
+                    <div class="hero__button flex flex-col py-4 lg:flex lg:flex-row lg:gap-4">
+                    <a href="#" class="rounded-full bg-[#283EA3] py-3 text-[#C5F0C9] text-center font-semibold lg:w-[25%] hover:scale-105">GET STARTED</a>
+                    <a href="#" class="rounded-full border-solid border-2 py-3 text-[#283EA3] font-semibold border-[#283EA3] text-center lg:w-[25%] hover:scale-105">VIEW PLANS</a>
                     </div>
                     
                     <p class="text-[#283EA3] text-[.7rem]"><span class="underline">Terms and conditions apply.</span> Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
@@ -52,17 +62,16 @@
         <div class="container">
             <div class="services__wrap text-center p-[2rem] ">
                 <h1 class="text-[2rem] font-bold">Why go premium?</h1>
-                <div class="services__list gap-4 text-left sm:flex py-12">
-                    <div class="services__listitem flex gap-4 pb-4">
-                        <img src="../image/services-img1.jpg" class="h-[6rem] w-[6rem]" alt="">
+                <div class="services__list gap-4 text-left lg:flex lg:flex-row lg:justify-between lg:py-8 ">
+                    <div class="services__listitem flex gap-4 py-4 lg:flex lg:flex-col lg:items-center lg:text-center">
+                        <img src="../image/services-img1.jpg" class="h-[6rem] w-[6rem] lg:h-[6rem] lg:w-[6rem]" alt="">
                         <div class="services__text my-auto">
                             <h1 class="text-[1.2rem] font-bold">Download music.</h1>
                             <p>Listen anywhere.</p>
                         </div>
-                        
                     </div>
 
-                    <div class="services__listitem flex gap-4 py-4">
+                    <div class="services__listitem flex gap-4 py-4 lg:flex lg:flex-col lg:items-center lg:text-center">
                         <img src="../image/services-img2.jpg" class="h-[6rem] w-[6rem]" alt="">
                         <div class="services__text my-auto">
                             <h1 class="text-[1.2rem] font-bold">Ad-free music listening.</h1>
@@ -71,7 +80,7 @@
                         
                     </div>
                     
-                    <div class="services__listitem flex gap-4 py-4">
+                    <div class="services__listitem flex gap-4 py-4 lg:flex lg:flex-col lg:items-center lg:text-center">
                         <img src="../image/services-img3.jpg" class="h-[6rem] w-[6rem]" alt="">
                         <div class="services__text my-auto">
                             <h1 class="text-[1.2rem] font-bold">Play any song.</h1>
@@ -80,7 +89,7 @@
                         
                     </div>
 
-                    <div class="services__listitem flex gap-4 py-4">
+                    <div class="services__listitem flex gap-4 py-4 lg:flex lg:flex-col lg:items-center lg:text-center">
                         <img src="../image/services-img4.jpg" class="h-[6rem] w-[6rem]" alt="">
                         <div class="services__text my-auto">
                             <h1 class="text-[1.2rem] font-bold">Unlimited skips.</h1>
@@ -95,10 +104,10 @@
 
     <section class="cta bg-[#efefef]">
         <div class="container">
-            <div class="cta__wrapper">
+            <div class="cta__wrapper mx-4">
                 <div class="cta__intro text-center py-[2rem] ">
                     <h1 class="text-[2rem]  font-bold">Pick your Premium</h1>
-                    <p>Listen without limits on your phone, speaker, and other devices.</p>
+                    <p class="">Listen without limits on your phone, speaker, and other devices.</p>
                     <div class="cta__icons mx- flex justify-center gap-2" >
                         <img src="../image/cta-img1.svg" class="w-[1.5rem] h-[1.3rem]" alt="">
                         <img src="../image/cta-img2.svg" class="w-[1.5rem] h-[1.3rem]" alt="">
@@ -108,152 +117,176 @@
                     </div>
                 </div>
 
-                <div class="cta__card p-[2rem]">
-                    <div class="cta__carditems rounded bg-white p-[1rem]">
-                        <div class="cta__cardintro py-4 border-b border-black">
-                            <p class="bg-[#283EA3] rounded text-white text-center py-1 text-[.9rem] font-semibold max-w-[35%]">2 month free</p>
-                            <h1 class="font-bold text-[1.4rem]">Individual</h1>
-                            <p>$9.99/month after offer period 1 account</p>
-                        </div>
-                        <div class="cta__body">
-                            <ul>
-                                <li class="flex gap-4 mt-4">
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Ad-free music listening</p>
-                                </li>
-                                <li class="flex gap-4">
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Play anywhere - even offline</p>
-                                </li>
-                                <li class="flex gap-4 mb-4">
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>On-demand playback</p>
-                                </li>
-                            </ul>
-                            <a href="#" class="text-center">GET STARTED</a>
-                            <p>Terms and conditions apply. Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
-                        </div>
+                <div class="cta__card p-[2rem] grid grid-cols-1 lg:grid lg:grid-cols-4 lg:gap-4">
+                    <div class="cta__carditems rounded-lg bg-white p-[1rem] my-4 shadow-2xl">
+                        <p class="bg-[#283EA3] rounded text-white text-center py-1 text-[.9rem] font-semibold max-w-[35%] lg:max-w-[60%]">2 month free</p>
+                        <h1 class="font-bold text-[1.4rem]">Individual</h1>
+                        <p class="max-w-[70%]">$9.99/month after offer period 1 account</p>
+                        <span class="block w-full h-[.01rem] bg-black my-4"></span>
+                        
+                        <ul class="lg:pb-[5rem]">
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Ad-free music listening</p>
+                            </li>
+                            <li class="flex gap-4 my-3">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Play anywhere - even offline</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>On-demand playback</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="bg-black inline-block w-[95%] text-white text-center rounded-full text-[.8rem] py-4 font-semibold hover:scale-105">GET STARTED</a>
+                        <p class="py-4 text-[.7rem]"><span class="underline">Terms and conditions apply.</span> Individual plan only. $9.99/month after. 2months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
                     </div>
 
-                    <div class="cta__carditems">
-                        <div class="cta__cardintro">
-                            <p>2 month free</p>
-                            <h1>Individual</h1>
-                            <p>$9.99/month after offer period 1 account</p>
-                        </div>
-                        <div class="cta__body">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Ad-free music listening</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Play anywhere - even offline</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>On-demand playback</p>
-                                </li>
-                            </ul>
-                            <a href="#">GET STARTED</a>
-                            <p>Terms and conditions apply. Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
-                        </div>
+                    <div class="cta__carditems rounded-lg bg-white p-[1rem] my-4 shadow-2xl">
+                        <p class="bg-[#283EA3] rounded text-white text-center py-1 text-[.9rem] font-semibold max-w-[35%]">1 month free</p>
+                        <h1 class="font-bold text-[1.4rem]">Duo</h1>
+                        <p class="max-w-[70%]">$12.99/month after offer period 2 accounts</p>
+                        <span class="block w-full h-[.01rem] bg-black my-4"></span>
+                        
+                        <ul class="my-8">
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>2 Premium accounts for a couple under one roof</p>
+                            </li>
+                            <li class="flex gap-4 my-3">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Ad-free music listening, play offline, on-demand playback</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="bg-black inline-block w-[95%] text-white text-center rounded-full text-[.8rem] py-4 font-semibold hover:scale-105">GET STARTED</a>
+                        <p class="py-4 text-[.7rem]"><span class="underline">Terms and conditions apply.</span> 1 month free not available for users who have already tried Premium.</p>
                     </div>
 
-                    <div class="cta__carditems">
-                        <div class="cta__cardintro">
-                            <p>2 month free</p>
-                            <h1>Duo</h1>
-                            <p>$12.99/month after offer period 2 accounts</p>
-                        </div>
-                        <div class="cta__body">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Ad-free music listening</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Play anywhere - even offline</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>On-demand playback</p>
-                                </li>
-                            </ul>
-                            <a href="#">GET STARTED</a>
-                            <p>Terms and conditions apply. Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
-                        </div>
+                    <div class="cta__carditems rounded-lg bg-white p-[1rem] my-4 shadow-2xl">
+                        <p class="bg-[#283EA3] rounded text-white text-center py-1 text-[.9rem] font-semibold max-w-[35%]">2 month free</p>
+                        <h1 class="font-bold text-[1.4rem]">Family</h1>
+                        <p class="max-w-[70%]">$15.99/month after offer period 6 accounts</p>
+                        <span class="block w-full h-[.01rem] bg-black my-4"></span>
+                        
+                        <ul class="my-8">
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>6 Premium accounts for family members living under one roof</p>
+                            </li>
+                            <li class="flex gap-4 my-3">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Block explicit music</p>
+                            </li>
+                            <li class="flex gap-4 mb-3">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Ad-free music listening, play offline, on-demand playback</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Spotify Kids: a separate app made just for kids</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="bg-black inline-block w-[95%] text-white text-center rounded-full text-[.8rem] py-4 font-semibold hover:scale-105">GET STARTED</a>
+                        <p class="py-4 text-[.7rem]"><span class="underline">Terms and conditions apply.</span> 1 month free not available for users who have already tried Premium.</p>
                     </div>
 
-                    <div class="cta__carditems">
-                        <div class="cta__cardintro">
-                            <p>2 month free</p>
-                            <h1>Individual</h1>
-                            <p>$9.99/month after offer period 1 account</p>
-                        </div>
-                        <div class="cta__body">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Ad-free music listening</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>Play anywhere - even offline</p>
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-check"></i>
-                                    <p>On-demand playback</p>
-                                </li>
-                            </ul>
-                            <a href="#">GET STARTED</a>
-                            <p>Terms and conditions apply. Individual plan only. $9.99/month after. 2 months free not available for users who have already tried Premium. Offer ends July 10, 2023.</p>
-                        </div>
+                    <div class="cta__carditems rounded-lg bg-white p-[1rem] my-4 shadow-2xl">
+                        <p class="bg-[#283EA3] rounded text-white text-center py-1 text-[.9rem] font-semibold max-w-[35%]">2 month free</p>
+                        <h1 class="font-bold text-[1.4rem]">Student</h1>
+                        <p class="max-w-[70%]">$4.99/month after offer period 1 account</p>
+                        <span class="block w-full h-[.01rem] bg-black my-4"></span>
+                        
+                        <ul class="my-8">
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Hulu (With Ads) plan</p>
+                            </li>
+                            <li class="flex gap-4 my-3">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Ad-free music listening</p>
+                            </li>
+                            <li class="flex gap-4 mb-3">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>Play anywhere - even offline</p>
+                            </li>
+                            <li class="flex gap-4">
+                                <i class="fa-solid fa-check text-[1.5rem]"></i>
+                                <p>On-demand playback</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="bg-black inline-block w-[95%] text-white text-center rounded-full text-[.8rem] py-4 font-semibold hover:scale-105">GET STARTED</a>
+                        <p class="py-4 text-[.7rem]">Offer currently includes access to Hulu (With Ads) plan, subject to eligibility. Available only to students at an accredited higher education institution. 1 month free only open to higher education students who haven't already tried Premium. <span class="underline">Terms and conditions apply.</span></p>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer bg-black">
+    <footer class="footer bg-black pt-[3rem]">
         <div class="container">
-            <div class="footer__wrapper">
+            <div class="footer__wrapper mx-4">
                 <div class="footer__info">
-                    <div>
+                    <div class="text-white">
+                        <a href="#" class="flex items-center gap-1">
+                            <i class="fa-brands fa-spotify text-[1.3rem]"></i>
+                            <h1>Spotify</h1>
+                        </a>
+                    </div>
+                    <div class="footer__text text-white">
+                        <div class="flex flex-col gap-4 my-[3rem]">
+                            <p class="text-[#919496] text-[.8rem] font-semibold">COMPANY</p>
+                            <a href="#">About</a>
+                            <a href="#">Jobs</a>
+                            <a href="#">For the record</a>
+                        </div>
+                        <div class="flex flex-col gap-4 my-[3rem]">
+                            <p class="text-[#919496] text-[.8rem] font-semibold">COMMUNITIES</p>
+                            <a href="#">For Artist</a>
+                            <a href="#">Developers</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Investors</a>
+                            <a href="#">Vendors</a>
+                            <a href="#">Spotify for Work</a>
+                        </div>
+                        <div class="flex flex-col gap-4 my-[3rem]">
+                            <p class="text-[#919496] text-[.8rem] font-semibold">USEFUL LINKS</p>
+                            <a href="#">Support</a>
+                            <a href="#">Web Player</a>
+                            <a href="#">Free Mobile App</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__icons text-white flex gap-4">
+                    <span class="w-[3rem] h-[3rem] rounded-full bg-[#222326] flex items-center justify-center cursor-pointer"><i class="fa-brands fa-instagram text-[1.5rem] hover:text-[#1ed760]"></i></span>
+                    <span class="w-[3rem] h-[3rem] rounded-full bg-[#222326] flex items-center justify-center cursor-pointer"><i class="fa-brands fa-twitter text-[1.5rem] hover:text-[#1ed760]"></i></span>
+                    <span class="w-[3rem] h-[3rem] rounded-full bg-[#222326] flex items-center justify-center cursor-pointer"><i class="fa-brands fa-facebook text-[1.5rem] hover:text-[#1ed760]"></i></span>
+                </div>
 
-                    </div>
-                    <div>
-                        <p>Company</p>
-                        <a href="#">About</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">For the record</a>
-                    </div>
-                    <div>
-                        <p>Company</p>
-                        <a href="#">About</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">For the record</a>
-                    </div>
-                    <div>
-                        <p>Company</p>
-                        <a href="#">About</a>
-                        <a href="#">Jobs</a>
-                        <a href="#">For the record</a>
-                    </div>
+                <div class="flex justify-end gap-1 my-4">
+                        <i class="fa-solid fa-earth-oceania text-[#919496]"></i>
+                        <small class="text-[.6rem] text-[#919496] hover:text-[#1ed760]"><a href="">USA</a></small>
                 </div>
-                <div class="footer__icons">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook"></i>
+
+                <div class="flex pb-[3rem]">
+                    <ul class="flex flex-wrap items-center gap-4 text-[.7rem] text-[#919496]">
+                        <li class="hover:text-[#1ed760] "><a href="#">Legal</a></li>
+                        <li class="hover:text-[#1ed760] "><a href="#">Privacy Center</a></li>
+                        <li class="hover:text-[#1ed760] "><a href="#">Privacy Policy</a></li>
+                        <li class="hover:text-[#1ed760] "><a href="#">Cookies</a></li>
+                        <li class="hover:text-[#1ed760] "><a href="#">About Ads</a></li>
+                        <li class="hover:text-[#1ed760] "><a href="#">Accesibility</a></li>
+                        <li class="hover:text-[#1ed760] "><a href="#">Notice at Collection</a></li>
+                        <li class="hover:text-[#1ed760] flex  gap-1"><a href="#">Cookies Settings</a><img src="../image/vector4.svg" class="w-[1.5rem] h-[1.5rem]items-center"  alt=""></li>
+                    </ul>
+                    <span class="flex-shrink-0 text-[#919496] text-[.7rem] ml-auto">© 2023 Spotify AB</span>
                 </div>
+                
 
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
